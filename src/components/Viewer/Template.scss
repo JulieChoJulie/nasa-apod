@@ -1,3 +1,32 @@
+@import 'utils';
+
 .viewer-template {
-  
+  header {
+    background: $oc-gray-9;
+    height: 5rem;
+    color: white;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    // fit font size based on tablet size
+    @include media("<tablet") {
+      font-size: 1.25rem;
+    }
+  }
+
+
+  viewer-wrapper {
+    position: relative;
+    width: 100%;
+    // fill the whole screen after header.
+    height: calc(100vh - 5rem);
+  }
+
 }
+
+
