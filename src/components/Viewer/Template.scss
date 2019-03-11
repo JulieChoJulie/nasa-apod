@@ -3,7 +3,7 @@
 .viewer-template {
   header {
     background: $oc-gray-9;
-    height: 5rem;
+    height: 3rem;
     color: white;
     padding: 1rem;
 
@@ -20,11 +20,11 @@
   }
 
 
-  viewer-wrapper {
+  .viewer-wrapper {
     position: relative;
     width: 100%;
     // fill the whole screen after header.
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 3rem);
   }
 
 }
