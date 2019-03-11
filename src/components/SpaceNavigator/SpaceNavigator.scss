@@ -32,6 +32,10 @@
       svg {
         font-size: 2rem;
       }
+      @include media("<tablet") {
+        width: 1rem;
+        height: 1rem;
+      }
     }
   }
 }
